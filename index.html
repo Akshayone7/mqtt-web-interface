@@ -74,11 +74,13 @@
 
         // Publish message to turn TV ON
         document.getElementById('tv-on').addEventListener('click', function () {
+            console.log("Publishing ON to TV");
             client.publish(tvTopic, 'ON');
         });
 
         // Publish message to turn TV OFF
         document.getElementById('tv-off').addEventListener('click', function () {
+            console.log("Publishing OFF to TV");
             client.publish(tvTopic, 'OFF');
         });
 
@@ -94,4 +96,5 @@
     </script>
 </body>
 </html>
+
 
